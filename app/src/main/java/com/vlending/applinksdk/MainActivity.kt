@@ -14,7 +14,7 @@ class MainActivity : Activity() {
 
         AppLink.setNetwork(baseUrl = "YOUR_BASE_URL", apiKey = "YOUR_API_KEY")
         AppLink.setUserId(userId = "YOUR_USER_ID")
-        AppLink.customScheme = "CUSTOM_SCHEME"
+        AppLink.customScheme = "YOUR_CUSTOM_SCHEME"
         getDeeplinkInfo(intent)
 
         val buttonGenerate: Button = findViewById(R.id.button_generate)
@@ -33,7 +33,7 @@ class MainActivity : Activity() {
             AppLinkInfo(
                 utm = AppLinkInfo.Utm("CAMPAIGN_NAME", "UTM_MEDIUM", "UTM_SOURCE"),
                 webUrl = "WEB_URL",
-                scheme = "SCHEME",
+                scheme = AppLink.customScheme,
                 action = "ACTION",
                 imageUrl = "IMAGE_URL",
                 title = "TITLE",
