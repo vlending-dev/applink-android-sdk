@@ -4,8 +4,10 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import com.vlending.mubeatapplink.AppLink
 import com.vlending.mubeatapplink.model.AppLinkInfo
+import com.vlending.mubeatapplink.model.AppLinkUtm
 
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,9 +33,8 @@ class MainActivity : Activity() {
     private fun generateAppLink() {
         AppLink.generateAppLink(
             AppLinkInfo(
-                utm = AppLinkInfo.Utm("CAMPAIGN_NAME", "UTM_MEDIUM", "UTM_SOURCE"),
+                appLinkUtm = AppLinkUtm("CAMPAIGN_NAME", "UTM_MEDIUM", "UTM_SOURCE"),
                 webUrl = "WEB_URL",
-                scheme = AppLink.customScheme,
                 action = "ACTION",
                 imageUrl = "IMAGE_URL",
                 title = "TITLE",
@@ -49,18 +50,14 @@ class MainActivity : Activity() {
         if (AppLink.isValidationLink(intent?.data.toString())) {
             AppLink.getAppLinkInfo(intent, successCallback = { appLinkInfo ->
                 when (appLinkInfo.scheme) {
-                    "AAA" -> {
+                    AppLink.customScheme -> {
                         if (appLinkInfo.action == "ACTION") {
                             //DO SOMETHING...
                         } else {
                             //DO SOMETHING...
                         }
                     }
-                    "BBB" -> {
-                        //DO SOMETHING...
-                    }
                 }
-
             }, failedCallback = {
                 //DO SOMETHING...
             })
