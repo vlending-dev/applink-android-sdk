@@ -3,7 +3,7 @@ Distribute the SDK of the deep link service provided by Vlending.
 
 ## Requirements
 * Android 7.0+
-* Android Studio 3.0
+* Android Studio 3.0+
 * Java 7+
 
 ## Features
