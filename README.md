@@ -36,7 +36,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'io.github.vlending-dev.applink-android-sdk:0.0.13'
+  implementation 'io.github.vlending-dev.applink-android-sdk:0.0.14'
 }
 ```
 
