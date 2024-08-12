@@ -52,7 +52,7 @@ Or Maven:
 
 ## License
 
-See the [LICENSE](https://github.com/vlending-dev/applink-android-sdk/blob/master/LICENSE.txt) file.
+See the [LICENSE](https://github.com/vlending-dev/applink-android-sdk/blob/master/LICENSE) file.
 Copyright © Vlending Co., Ltd.
 
 ## Contact
