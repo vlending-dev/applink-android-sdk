@@ -46,13 +46,13 @@ Or Maven:
 <dependency>
   <groupId>io.github.vlending-dev</groupId>
   <artifactId>applink-android-sdk</artifactId>
-  <version>0.0.12</version>
+  <version>0.0.14</version>
 </dependency>
 ```
 
 ## License
 
-See the [LICENSE](https://github.com/vlending-dev/applink-ios-sdk/blob/master/LICENSE.txt) file.
+See the [LICENSE](https://github.com/vlending-dev/applink-android-sdk/blob/master/LICENSE.txt) file.
 Copyright © Vlending Co., Ltd.
 
 ## Contact

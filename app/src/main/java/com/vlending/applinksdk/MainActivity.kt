@@ -40,7 +40,7 @@ class MainActivity : Activity() {
                 title = "TITLE",
                 description = "DESCRIPTION"
             ), successCallback = {
-                AppLink.showShareClip(context = this, url = it.url)
+                AppLink.showShareClip(context = this, url = it)
             }, failedCallback = {
                 //DO SOMETHING...
             })
