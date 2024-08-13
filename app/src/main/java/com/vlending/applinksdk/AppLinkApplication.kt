@@ -8,6 +8,6 @@ class AppLinkApplication : Application() {
         super.onCreate()
 
         AppLink.setNetwork(baseUrl = "YOUR_BASE_URL", apiKey = "YOUR_API_KEY")
-        AppLink.customScheme = "YOUR_CUSTOM_SCHEME"
+        AppLink.setCustomScheme("YOUR_CUSTOM_SCHEME")
     }
 }
