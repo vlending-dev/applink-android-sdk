@@ -5,10 +5,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import android.widget.Toast
-import com.vlending.mubeatapplink.AppLink
-import com.vlending.mubeatapplink.model.AppLinkInfo
-import com.vlending.mubeatapplink.model.AppLinkUtm
+import com.vlending.applink.AppLink
+import com.vlending.applink.model.AppLinkInfo
+import com.vlending.applink.model.AppLinkUtm
 
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {

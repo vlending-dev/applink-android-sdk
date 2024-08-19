@@ -1,7 +1,7 @@
 package com.vlending.applinksdk
 
 import android.app.Application
-import com.vlending.mubeatapplink.AppLink
+import com.vlending.applink.AppLink
 
 class AppLinkApplication : Application() {
     override fun onCreate() {
