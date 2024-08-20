@@ -36,7 +36,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'io.github.vlending-dev.applink-android-sdk:0.0.21'
+  implementation 'io.github.vlending-dev.applink-android-sdk:0.0.22'
 }
 ```
 
@@ -46,7 +46,7 @@ Or Maven:
 <dependency>
   <groupId>io.github.vlending-dev</groupId>
   <artifactId>applink-android-sdk</artifactId>
-  <version>0.0.21</version>
+  <version>0.0.22</version>
 </dependency>
 ```
 
