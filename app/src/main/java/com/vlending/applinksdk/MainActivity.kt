@@ -25,7 +25,7 @@ class MainActivity : Activity() {
 
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
-        getDeeplinkInfo(intent)
+        if (intent != null) getDeeplinkInfo(intent)
     }
 
     private fun generateAppLink() {
@@ -44,8 +44,8 @@ class MainActivity : Activity() {
             })
     }
 
-    private fun getDeeplinkInfo(intent: Intent?) {
-        if (AppLink.isValidationLink(intent?.data.toString())) {
+    private fun getDeeplinkInfo(intent: Intent) {
+        if (AppLink.isValidationLink(intent.data.toString())) {
             AppLink.getAppLinkInfo(intent, successCallback = { appLinkInfo, code, urlQuery  ->
                 Log.d("AppLink", "code = $code, urlQuery = $urlQuery")
                 when (appLinkInfo.scheme) {
